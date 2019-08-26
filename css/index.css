@@ -1,0 +1,331 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Slabo 27px', serif;
+}
+
+header {
+    height: 70px;
+    overflow: hidden;
+    background: #73bc52;
+    width: 100%;
+    position: fixed;
+}
+
+.logo [src^=img] {
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 26px;
+    text-shadow: 0 1px 0 white;
+    color: #373e47;
+    height: 70px;
+}
+
+nav {
+    overflow: hidden;
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+}
+
+.panel li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 30px;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgb(6, 97, 18);
+    text-transform: uppercase
+}
+
+.panel li a:hover {
+    color: #1b6907;
+}
+
+#home {
+    height: 650px;
+    padding: 100px 50px 50px 0;
+    background-color: rgba(247, 255, 243, 0.979);
+}
+
+#home [src^=img] {
+    width: 50%;
+    max-width: 700px;
+    float: left;
+    padding-right: 4%;
+    padding-left: 8%
+}
+
+#home div {
+    text-align: center;
+    font-size: 2em;
+}
+
+#home div > h2 {
+    margin: 40px 0 2px 0;
+    line-height: 45px;
+    font-weight: 900;
+}
+
+#home div p:first-of-type {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0 0 25px 0;
+}
+
+#home div p:last-of-type {
+    line-height: 135px;
+    margin: 50px 0 0 0;
+}
+
+#home div a {
+    color: #ffffff;
+    padding: 20px 30px 20px 30px;
+    font-weight: 800;
+    background-color: #73bc52;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#home div a:hover {
+    color: #1b6907;
+}
+
+#our_games {
+    border-top-style: solid;
+    line-height: 1.5;
+    border-top-color: #73bc52;
+    background-color: rgb(238, 250, 231);
+    padding: 50px
+}
+
+#our_games h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 20px;
+    margin: 0
+}
+
+#our_games img {
+    display: block;
+}
+
+#our_games div a {
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 40px 10px 40px;
+    font-weight: 800;
+    background-color: rgba(239, 255, 230, 0.856);
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#our_games div a:hover {
+    color: #73bc52;
+    border: 2px solid #73bc52;
+}
+
+#about_us {
+    border-top-style: solid;
+    line-height: 1.5;
+    border-top-color: #73bc52;
+    background-color: rgba(247, 255, 243, 0.979);
+    padding: 50px;
+}
+
+#about_us h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 20px;
+    margin: 0;
+    display: inline;
+}
+
+#about_us [src^=img] {
+    float: right;
+    height: 275px;
+    margin: 0 0 30px 10px;
+}
+
+#about_us p {
+    font-size: 24px;
+    margin: 0;
+    padding: 0 15px 15px 15px;
+}
+
+#jobs {
+    border-top-style: solid;
+    line-height: 1.5;
+    border-top-color: #73bc52;
+    background-color: rgb(220, 241, 206);
+    padding: 50px
+}
+
+#jobs h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 20px;
+    margin: 0
+}
+
+#jobs [href*=html] {
+    font-size: 2rem;
+    color: #000000;
+    padding: 20px 20px 20px 0;
+    margin: 0
+}
+
+#jobs p {
+    color: #000000a9;
+    border-bottom-style: solid;
+    line-height: 0.5;
+    margin: 0;
+    padding: 20px 20px 20px 0;
+    border-bottom-color: #0000000e
+}
+
+#contact {
+    border-top-style: solid;
+    line-height: 1.5;
+    border-top-color: #73bc52;
+    background-color: rgb(238, 250, 231);
+    padding: 50px;
+    height: 480px;
+}
+
+#contact h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 20px;
+    margin: 0
+}
+
+#contact img {
+    float: left;
+    width: 30%;
+    max-width: 350px;
+}
+
+#contact form {
+    font-size: 20px
+}
+
+#contact input {
+    width: 420px;
+    height: 30px;
+}
+
+#contact input[type="submit"] {
+    width: 115px;
+    height: 37px;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #73bc52;
+    border-radius: 15px;
+    font-size: 16px
+}
+
+#contact input[type="submit"]:hover {
+    color: #1b6907;
+}
+
+#contact textarea {
+    width: 420px;
+}
+
+.footer {
+    height: 140px;
+    overflow: hidden;
+    background: #73bc52;
+}
+
+.footer img[src*="logo"] {
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 26px;
+    text-shadow: 0 1px 0 white;
+    color: #373e47;
+    height: 70px;
+}
+
+.footer p {
+    text-align: center;
+    color: #81cf6e;
+    font-size: 20px
+}
+
+.social_media img {
+    height: 55px;
+    border-radius: 10px;
+}
+#wildscapes{
+    height: 1600px;
+}
+
+#wildscapes div img{
+    float: left;
+    padding: 30px
+}
+#wildscapes p{
+    margin:0;
+    padding: 30px 30px 0 30px;
+    font-size: 22px
+}
+
+#wildscapes div{
+    padding: 0 30px 0 30px;
+    font-size: 22px
+}
+
+#wildscapes h3{
+    clear: both;
+}
+
+#wildscapes p:last-of-type{
+    margin:0;
+    padding: 30px 30px 0 0px;
+    font-size: 22px
+}
+
+.info{
+    padding: 100px 50px 50px 0;
+}
+
+#career {
+     border-top-style: solid;
+    line-height: 1.5;
+    border-top-color: #73bc52;
+    background-color: rgb(229, 255, 217);
+    padding: 50px;
+    font-size:20px
+}
+
+#career h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 20px;
+    margin: 0
+}
+
+#career p{
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+#career p:nth-of-type(n+5){
+    padding: 30px 0 5px 0;
+}
+#career ul{
+    margin:0;
+}
