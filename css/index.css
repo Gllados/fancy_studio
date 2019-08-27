@@ -104,18 +104,19 @@ nav li {
     line-height: 1.5;
     border-top-color: #73bc52;
     background-color: rgb(238, 250, 231);
-    padding: 50px
+    padding: 50px 0 50px 0;
 }
 
 #our_games h1 {
     text-transform: uppercase;
     font-size: 36px;
-    padding: 20px;
+    padding: 20px 20px 20px 70px;
     margin: 0
 }
 
 #our_games img {
-    display: block;
+    max-width: 100%;
+    padding: 0;
 }
 
 #our_games div a {
@@ -140,7 +141,7 @@ nav li {
     line-height: 1.5;
     border-top-color: #73bc52;
     background-color: rgba(247, 255, 243, 0.979);
-    padding: 50px;
+    padding: 75px 50px 50px 50px;
 }
 
 #about_us h1 {
@@ -154,7 +155,7 @@ nav li {
 #about_us [src^=img] {
     float: right;
     height: 275px;
-    margin: 0 0 30px 10px;
+    margin: 0 0 10px 10px;
 }
 
 #about_us p {
@@ -270,30 +271,36 @@ nav li {
     height: 55px;
     border-radius: 10px;
 }
-#wildscapes{
-    height: 1600px;
+#games{
+    height: 1500px;
+
 }
 
-#wildscapes div img{
+#games  img[src*="head"]{
+    max-width: 100%;
+    padding: 70px 0 0 0;
+
+}
+#games div img{
     float: left;
     padding: 30px
 }
-#wildscapes p{
+#games p{
     margin:0;
     padding: 30px 30px 0 30px;
     font-size: 22px
 }
 
-#wildscapes div{
+#games div{
     padding: 0 30px 0 30px;
     font-size: 22px
 }
 
-#wildscapes h3{
+#games h3{
     clear: both;
 }
 
-#wildscapes p:last-of-type{
+#games p:last-of-type{
     margin:0;
     padding: 30px 30px 0 0px;
     font-size: 22px
@@ -323,8 +330,11 @@ nav li {
     margin: 0;
     padding: 5px 0 5px 0;
 }
-#career p:nth-of-type(n+5){
+#career h3{
     padding: 30px 0 5px 0;
+}
+#career h3:first-of-type{
+    padding: 10px 0 5px 0;
 }
 #career ul{
     margin:0;
