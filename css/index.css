@@ -12,6 +12,7 @@ header {
     background: #73bc52;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .logo [src^=img] {
@@ -117,6 +118,8 @@ nav li {
 #our_games img {
     max-width: 100%;
     padding: 0;
+    position: relative;
+   
 }
 
 #our_games div a {
@@ -129,6 +132,12 @@ nav li {
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
+    position: relative;
+    top: -90px;
+    left: 46%;
+    z-index: 1;
+    background-color: white;
+    width: 500px;
 }
 
 #our_games div a:hover {
