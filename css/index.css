@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
 :root{
     --main-color: #73bc52
 }
@@ -6,7 +8,7 @@ body {
     margin:  auto;
 	padding: 0;
 	border: 0;
-
+font-family: 'Livvic', sans-serif;
 }
 
 header{
@@ -71,12 +73,13 @@ header .panel li a:hover {
 #home [src^=img] {
     width: 100%;
     display: block;
-    max-width: 400px
+    max-width: 400px;
+    margin: auto
 }
 
 #home div {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 100px
 }
 
@@ -114,8 +117,11 @@ header .panel li a:hover {
 
 @media (min-width: 500px){
     #home [src^=img] {
-    width: 50%;
+    width: 49%;
     float: left;
+}
+#home div {
+    font-size: 1rem
 }
 }
 
@@ -132,7 +138,7 @@ header .panel li a:hover {
     }
 }
 
-@media (min-width: 900px){
+@media (min-width: 800px){
      #home div{
          font-size: 1.7rem;
      }
@@ -141,7 +147,6 @@ header .panel li a:hover {
      }
      #home [src^=img]{
      max-width: 500px;
-     padding: 0
      }
 }
 
@@ -213,7 +218,7 @@ header .panel li a:hover {
 }
 
 #about_us p{
-        margin:0 10px 20px 10px;
+        margin:10px 10px 20px 10px;
     }
 
 @media (min-width: 650px){
@@ -336,19 +341,18 @@ header .panel li a:hover {
     #contact input {
     width: 500px;
     height: 30px;
-}
+    }
 
 #contact textarea {
     width: 500px;
-}
+    }
 
 #contact span{
     justify-content: flex-end
-}
+    }
 }
 
 footer {
-
     background: var(--main-color);
 }
 
@@ -369,7 +373,7 @@ footer .social_media{
     display: flex;
     justify-content: space-around
 }
-.social_media img {
+footer .social_media img {
     height: 45px;
     border-radius: 10px;
 }
@@ -398,44 +402,73 @@ footer .social_media{
     }
 }
 
+#games {
+
+}
 
 #games  img[src*="head"]{
     width: 100%;
 }
 #games div img[alt^="icon"]{
     float: left;
-    padding: 30px
+    padding: 30px;
+    width: 30%;
+    max-width: 200px
 }
 #games p{
     margin:0;
-    padding: 30px 30px 0 30px;
+    padding: 30px 10px 0 10px;
     font-size: 22px
 }
 
 #games div{
-
-    font-size: 22px
+    padding: 0 15px;
+    font-size: 1.2rem
 }
 
 #games h3{
     clear: both;
+    padding: 0 15px
 }
 
 #games p:last-of-type{
     margin:0;
-    padding: 30px 30px 0 0px;
+    padding: 30px 10px 0 10px;
     font-size: 22px
 }
 
+#games h4{
+    padding: 0 10px
+}
 
 
-.social_media, .download{
+#games .social_media, .download{
     display: flex;
     justify-content: space-around
 
 }
-.social_media img {
+#games .social_media img {
     height: 55px;
     border-radius: 10px;
     padding: 0
+}
+#games .download img{
+    padding: 10px
+}
+@media (min-width: 450px){
+    #games .social_media{
+    display: flex;
+    justify-content: flex-start
+    }
+    #games .download{
+    display: flex;
+    justify-content: flex-end
+    }
+#games .social_media img {
+    height: 65px;
+    padding: 20px
+}
+#games .download img{
+    padding: 20px
+}
 }
