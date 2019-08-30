@@ -349,9 +349,7 @@ header .panel li a:hover {
 
 footer {
 
-
     background: var(--main-color);
-
 }
 
 footer img[alt*="fancy"]{
@@ -367,8 +365,77 @@ footer p {
     margin: 0
 }
 
+footer .social_media{
+    display: flex;
+    justify-content: space-around
+}
 .social_media img {
     height: 45px;
     border-radius: 10px;
+}
 
+@media (min-width: 450px){
+    footer img[alt*="fancy"]{
+        float: left;
+    }
+    footer p {
+        padding-top: 10px
+    }
+}
+
+@media (min-width: 550px){
+    .social_media img {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+    footer .social_media{
+    display: flex;
+    justify-content: center
+    }
+}
+
+
+#games  img[src*="head"]{
+    width: 100%;
+}
+#games div img[alt^="icon"]{
+    float: left;
+    padding: 30px
+}
+#games p{
+    margin:0;
+    padding: 30px 30px 0 30px;
+    font-size: 22px
+}
+
+#games div{
+
+    font-size: 22px
+}
+
+#games h3{
+    clear: both;
+}
+
+#games p:last-of-type{
+    margin:0;
+    padding: 30px 30px 0 0px;
+    font-size: 22px
+}
+
+
+
+.social_media, .download{
+    display: flex;
+    justify-content: space-around
+
+}
+.social_media img {
+    height: 55px;
+    border-radius: 10px;
+    padding: 0
 }
