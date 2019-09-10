@@ -12,7 +12,7 @@ font-family: 'Livvic', sans-serif;
 }
 
 header{
-    height: 100px;
+
     background: var(--main-color);
 }
 
@@ -24,6 +24,7 @@ header .logo img[src^="img"]{
 
 header .panel ul{
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -44,15 +45,15 @@ header .panel li a:hover {
 
 @media (min-width: 500px) {
     header{
-        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    header .panel{
+        flex: 1
     }
     header .logo img[src^="img"]{
-        float: left;
-        display: inline
-    }
-    header li{
-       margin-top: 40px;
 
+        display: inline
     }
 }
 
@@ -61,7 +62,7 @@ header .panel li a:hover {
         font-size: 20px;
     }
     header .panel ul{
-        margin-left: 30%
+        margin-left: 10%
     }
 }
 
@@ -271,11 +272,18 @@ header .panel li a:hover {
 #contact img {
     display: none
 }
+ #contact div {
+        display: flex;
 
+    }
+    #contact  .need{
+       flex-wrap: wrap;
+    }
+    #contact  .need label{
+       flex-wrap: wrap;
+    }
 #contact form{
-    display: flex;
-    justify-content: center;
-
+    margin: auto;
 }
 
 #contact input {
@@ -288,7 +296,7 @@ header .panel li a:hover {
 }
 
 #contact span{
-    display: flex;
+    display:flex;
     justify-content: center;
 }
 #contact input[type*="submit"] {
@@ -305,6 +313,7 @@ header .panel li a:hover {
     color: #1b6907;
 }
 
+
 @media (min-width: 400px){
     #contact input {
     width: 400px;
@@ -314,19 +323,21 @@ header .panel li a:hover {
 #contact textarea {
     width: 400px;
 }
+
 }
 
 @media (min-width: 650px){
-    #contact .section_name{
+      #contact .section_name{
         text-align: center;
+       padding: 20px 0;
     }
     #contact img {
         display: block;
-         float: left;
          width: 25%;
          max-width: 350px;
          padding-left: 5%
 }
+
     #contact input {
     width: 400px;
     height: 30px;
@@ -351,6 +362,7 @@ header .panel li a:hover {
     justify-content: flex-end
     }
 }
+
 
 footer {
     background: var(--main-color);
