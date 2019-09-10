@@ -383,7 +383,9 @@ footer p {
 
 footer .social_media{
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    margin-top: -15px;
+
 }
 footer .social_media img {
     height: 45px;
@@ -391,8 +393,11 @@ footer .social_media img {
 }
 
 @media (min-width: 450px){
-    footer img[alt*="fancy"]{
-        float: left;
+    footer{
+        display:flex;
+    }
+    footer div{
+        flex: 1;
     }
     footer p {
         padding-top: 10px
