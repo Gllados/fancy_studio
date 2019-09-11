@@ -4,7 +4,7 @@
     --main-color: #73bc52
 }
 html {
-    background: rgb(238, 255, 240)
+    background: rgb(244, 252, 245)
 }
 body {
     max-width: 980px;
@@ -69,7 +69,6 @@ header .panel li a:hover {
 }
 
 #home {
-
     background-color: rgba(247, 255, 243, 0.979);
 }
 
