@@ -4,7 +4,7 @@ document.querySelector('.content_operations')
 function contentOperations() {
     fetch('content_operations.html')
         .then( response => response.text() )
-        .then( html => document.querySelector('.html-container')
+        .then( html => document.querySelector('.container_content_operations')
                  .innerHTML = html);
 }
 
@@ -14,7 +14,7 @@ document.querySelector('.customer_care_agent')
 function customerCareAgent() {
     fetch('customer_care_agent.html')
         .then( response => response.text() )
-        .then( html => document.querySelector('.html-container')
+        .then( html => document.querySelector('.container_customer_care_agent')
                  .innerHTML = html );
 }
 
@@ -24,7 +24,7 @@ document.querySelector('.content_creator')
 function contentCreator() {
     fetch('content_creator.html')
         .then( response => response.text() )
-        .then( html => document.querySelector('.html-container')
+        .then( html => document.querySelector('.container_content_creator')
                  .innerHTML = html );
 }
 
@@ -34,7 +34,7 @@ document.querySelector('.content_production_coordinator')
 function contentProductionCoordinator() {
     fetch('content_production_coordinator.html')
         .then( response => response.text() )
-        .then( html => document.querySelector('.html-container')
+        .then( html => document.querySelector('.container_content_production_coordinator')
                  .innerHTML = html );
 }
 
