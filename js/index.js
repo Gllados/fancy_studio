@@ -17,3 +17,24 @@ function customerCareAgent() {
         .then( html => document.querySelector('.html-container')
                  .innerHTML = html );
 }
+
+document.querySelector('.content_creator')
+    .addEventListener('click', contentCreator);
+
+function contentCreator() {
+    fetch('content_creator.html')
+        .then( response => response.text() )
+        .then( html => document.querySelector('.html-container')
+                 .innerHTML = html );
+}
+
+document.querySelector('.content_production_coordinator')
+    .addEventListener('click', contentProductionCoordinator);
+
+function contentProductionCoordinator() {
+    fetch('content_production_coordinator.html')
+        .then( response => response.text() )
+        .then( html => document.querySelector('.html-container')
+                 .innerHTML = html );
+}
+

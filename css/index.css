@@ -3,6 +3,9 @@
 :root{
     --main-color: #73bc52
 }
+html {
+    background: rgb(238, 255, 240)
+}
 body {
     max-width: 980px;
     margin:  auto;
@@ -12,7 +15,6 @@ font-family: 'Livvic', sans-serif;
 }
 
 header{
-
     background: var(--main-color);
 }
 
@@ -241,23 +243,25 @@ header .panel li a:hover {
 }
 
 
-#jobs [href*=html] {
-    font-size: 1.3rem;
-    color: #000000;
-    padding: 20px 20px 20px 0;
-    margin: 0
+#jobs button {
+    font-size: 1.2rem;
+    background-color: rgb(220, 241, 206);
+    border: 0;
+    margin: 0;
+    padding: 15px 5px 5px 5px;
+    text-align: left;
 }
 
-#jobs p {
+#jobs .location{
     color: #000000a9;
     border-bottom-style: solid;
     margin: 0;
-    padding: 5px 20px 20px 0;
+    padding: 5px 20px 20px 5px;
     border-bottom-color: #0000000e
 }
 
 @media (min-width: 650px){
-    #jobs [href*=html] {
+    #jobs button {
         font-size: 1.5rem;
     }
 }
@@ -333,8 +337,7 @@ header .panel li a:hover {
     }
     #contact img {
         display: block;
-         width: 25%;
-         max-width: 350px;
+         width: 200px;
          padding-left: 5%
 }
 
