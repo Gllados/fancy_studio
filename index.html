@@ -5,64 +5,109 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Fancy Studio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo_fancystudio.png" alt="logo fancy studio">
-                </a>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_fancystudio.png" alt="logo fancy studio">
+                    </a>
+                </div>
+                <nav class="panel">
+                    <ul>
+                        <li>
+                            <a href="#our_games">our games</a>
+                        </li>
+                        <li>
+                            <a href="#about_us">about us</a>
+                        </li>
+                        <li>
+                            <a href="#jobs">jobs</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="panel">
-                <ul>
-                    <li>
-                        <a href="#our_games">our games</a>
-                    </li>
-                    <li>
-                        <a href="#about_us">about us</a>
-                    </li>
-                    <li>
-                        <a href="#jobs">jobs</a>
-                    </li>
-                    <li>
-                        <a href="#contact">contact</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
         <main>
             <section id="home">
-                <img src="img/high_score.png" alt="high score">
-                <div>
-                    <h2>We Love Games</h2>
-                    <p>Played Anywhere</p>
-                    <p>
-                        Games are a break, a learning experience,
+                <div class="container">
+                    <img src="img/high_score.png" alt="high score">
+                    <div>
+                        <h2>We Love Games</h2>
+                        <p>Played Anywhere</p>
+                        <p>
+                            Games are a break, a learning experience,
                  <br>and most of all a good smile.
-                    </p>
-                    <p>Start having fun now! </p>
-                    <a href="#our_games">Check out our games</a>
+
+                        </p>
+                        <p>Start having fun now! </p>
+                        <a href="#our_games">Check out our games</a>
+                    </div>
                 </div>
-          </section>
-          <section id="our_games">
+            </section>
+            <section id="our_games">
+                <div class="container">
+                    <h1 class="section_name">our games</h1>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="wildscapes.html">
+                                    <img src="img/games/wildscapes/wildscapes.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="fishdom.html">
+                                    <img src="img/games/fishdom/fishdom.jpg" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="gardenscapes.html">
+                                    <img src="img/games/gardenscapes/gardenscapes.jpg" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!--<div class="container">
                     <h1 class="section_name">our games</h1>
                 <div class="slider">
                     <a href="wildscapes.html">More</a>
                 </div>
+            </div>-->
             </section>
             <section id="about_us">
-                <div>
-                    <h1 class="section_name">about us</h1>
-                    <img src="img/team.png" alt="our team">
-                    <p>Meet the FancyStudio team. We are a dedicated group of gamers, who strive to deliver the best possible gaming experiences. At our core lies a belief that games should be played everywhere and at any time.</p>
-                    <p>The digital world allowed us to fulfill our dream: spend our days surrounded by talented people creating products that allow people around the world to enjoy their days just that tiny bit more!</p>
-                    <p>Sounds like something you might enjoy? We’re constantly searching for our next amazing team member – just know that we’re headquartered in Lviv, Ukraine!</p>
+                <div class="container">
+                    <div>
+                        <h1 class="section_name">about us</h1>
+                        <img src="img/team.png" alt="our team">
+                        <p>Meet the FancyStudio team. We are a dedicated group of gamers, who strive to deliver the best possible gaming experiences. At our core lies a belief that games should be played everywhere and at any time.</p>
+                        <p>The digital world allowed us to fulfill our dream: spend our days surrounded by talented people creating products that allow people around the world to enjoy their days just that tiny bit more!</p>
+                        <p>Sounds like something you might enjoy? We’re constantly searching for our next amazing team member – just know that we’re headquartered in Lviv, Ukraine!</p>
+                    </div>
                 </div>
             </section>
-           <section id="jobs">
-                <div>
-                    <h1 class="section_name"> Career </h1>
+            <section id="jobs">
+                <div class="container">
+                    <h1 class="section_name">Career </h1>
                     <button class="content_operations">Content Operations</button>
                     <p class="location">Location:  Lviv, Ukraine</p>
                     <div class="container_content_operations"></div>
@@ -77,54 +122,58 @@
                     <div class="container_content_production_coordinator"></div>
                 </div>
             </section>
-             <section id="contact">
-                <div>
+            <section id="contact">
+                <div class="container">
                     <img src="img/contact_us.png" alt="guy calling">
                     <div class="need">
-                    <h1 class="section_name">Need to contact us? </h1>
-                    <form>
-
-                         <label for="name">Name: </label>
-                         <br>
-                         <input id="name" type="text" name="Name">
-                         <br>
-                         <label for="user-email">Email: </label>
-                         <br>
-                         <input id="user-email" type="email" name="Email">
-                         <br>
-                         <label for="messege">Messege: </label>
-                         <br>
-                         <textarea id="messege" name="Messege" cols="50" rows="6" placeholder="Your message"></textarea>
-                         <br>
-                         <span>
-                              <input type="submit" value="Send">
-                         </span>
-                    </form>
+                        <h1 class="section_name">Need to contact us? </h1>
+                        <form>
+                            <label for="name">Name: </label>
+                            <br>
+                            <input id="name" type="text" name="Name">
+                            <br>
+                            <label for="user-email">Email: </label>
+                            <br>
+                            <input id="user-email" type="email" name="Email">
+                            <br>
+                            <label for="messege">Messege: </label>
+                            <br>
+                            <textarea id="messege" name="Messege" cols="50" rows="6" placeholder="Your message"></textarea>
+                            <br>
+                            <span>
+                                <input type="submit" value="Send">
+                            </span>
+                        </form>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
-            <img src="img/logo_fancystudio.png" alt="logo fancy studio">
-            <div>
-                <p>you can find us here </p>
-                <br>
-                <div class=social_media>
-                    <a href="https://www.facebook.com">
-                        <img src="img/fb.png" alt="logo facebook">
-                    </a>
-                    <a href="https://www.instagram.com">
-                        <img src="img/inst.png" alt="logo instagram">
-                    </a>
-                    <a href="https://www.youtube.com">
-                        <img src="img/yt.svg" alt="logo youtube">
-                    </a>
-                    <a href="https://twitter.com">
-                        <img src="img/twitter.png" alt="logo twitter">
-                    </a>
+            <div class="container">
+                <img src="img/logo_fancystudio.png" alt="logo fancy studio">
+                <div>
+                    <p>you can find us here </p>
+                    <br>
+                    <div class=social_media>
+                        <a href="https://www.facebook.com">
+                            <img src="img/fb.png" alt="logo facebook">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="img/inst.png" alt="logo instagram">
+                        </a>
+                        <a href="https://www.youtube.com">
+                            <img src="img/yt.svg" alt="logo youtube">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="img/twitter.png" alt="logo twitter">
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
