@@ -12,15 +12,13 @@ html {
     padding: 0
 }
 body {
-   /* max-width: 980px;
-    margin:  auto;*/
 	padding: 0;
 	border: 0;
     margin: 0;
     font-family: 'Livvic', sans-serif;
 }
 
-header{
+header {
     background: #74bc52d3;
     -webkit-backdrop-filter: saturate(180%) blur(15px);
     backdrop-filter: saturate(180%) blur(15px);
@@ -57,7 +55,7 @@ header .panel li a:hover {
     color: #1b6907;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 520px) {
     header .container{
         display: flex;
         align-items: center;
@@ -81,7 +79,7 @@ header .panel li a:hover {
 
 #home {
     background-color: rgba(247, 255, 243, 0.979);
-     padding-top: 50px;
+     padding-top: 80px;
 }
 
 #home [src^=img] {
@@ -93,8 +91,8 @@ header .panel li a:hover {
 
 #home div {
     text-align: center;
-    font-size: 1.2rem;
-    padding: 50px 0;
+    font-size: 1rem;
+    padding-bottom: 30px;
 }
 
 #home div  h2 {
@@ -129,35 +127,43 @@ header .panel li a:hover {
     color: #1b6907;
 }
 
-@media (min-width: 500px){
+@media (min-width: 520px){
+    #home .container{
+       display:flex;
+    }
     #home [src^=img] {
     width: 49%;
-    float: left;
-}
-#home div {
-    font-size: 1rem
+    }
+    #home h2{
+        font-size: 1.7rem
+    }
+   #home div p:nth-child(3){
+    font-size: 0.7rem;
 }
 }
 
-@media (min-width: 700px){
-    #home [src^=img]{
-        padding-left: 5%;
-    }
+@media (min-width: 720px){
     #home div {
         text-align: center;
-        padding-top: 25px;
+
     }
     #home div p:nth-child(3){
     padding: 20px  0
     }
+    #home h2{
+        font-size: 2rem
+    }
+     #home div p:nth-child(3){
+    font-size: 0.9rem;
+}
 }
 
-@media (min-width: 800px){
+@media (min-width: 820px){
      #home div{
-         font-size: 1.7rem;
+         font-size: 1.4rem;
      }
      #home div p:nth-child(3){
-          font-size: 1.3rem;
+          font-size: 1.1rem;
      }
      #home [src^=img]{
      max-width: 480px;
@@ -168,7 +174,7 @@ header .panel li a:hover {
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: 0 20px 20px 5%;
-    margin: 0
+    margin: 0;
 }
 
 @media (min-width: 650px){
@@ -408,6 +414,7 @@ footer .social_media img {
 
 #games  img[src*="head"]{
     width: 100%;
+    padding-top: 50px
 }
 #games div img[alt^="icon"]{
     float: left;
