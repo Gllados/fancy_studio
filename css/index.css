@@ -21,7 +21,8 @@ body {
 }
 
 header {
-    background: #74bc52d3;
+    background: rgb(133,199,99);
+    background: #74bc52d3 ;
     -webkit-backdrop-filter: saturate(180%) blur(10px);
     backdrop-filter: saturate(180%) blur(10px);
     position: fixed;
@@ -151,6 +152,7 @@ header .panel li a:hover {
     color: #ffffff;
     padding: 20px 30px 20px 30px;
     font-weight: 800;
+    background-color: #73bc52;
     background-color: var(--main-color);
     border-radius: 15px;
     text-decoration: none;
@@ -223,6 +225,7 @@ header .panel li a:hover {
 
 #our_games {
     border-top-style: solid;
+    border-top-color: #73bc52;
     border-top-color: var(--main-color);
     background-color: rgb(238, 250, 231);
     padding: 50px 0 50px 0;
@@ -230,6 +233,7 @@ header .panel li a:hover {
 
 #about_us {
     border-top-style: solid;
+    border-top-color: #73bc52;
     border-top-color: var(--main-color);
     background-color: rgba(247, 255, 243, 0.979);
     padding: 50px 0 50px 0;
@@ -258,6 +262,7 @@ header .panel li a:hover {
 #jobs {
     border-top-style: solid;
     border-top-color: #73bc52;
+    border-top-color: var(--main-color);
     background-color: rgb(220, 241, 206);
     padding: 50px
 }
@@ -283,6 +288,7 @@ header .panel li a:hover {
     border-bottom-style: solid;
     margin: 0;
     padding: 5px 20px 20px 5px;
+    border-bottom-color: rgb(228, 225, 225);
     border-bottom-color: #0000000e
 }
 
@@ -394,6 +400,7 @@ header .panel li a:hover {
 
 
 footer {
+    background-color: #73bc52;
     background: var(--main-color);
 }
 
@@ -453,33 +460,37 @@ footer .social_media img {
 
 #games  img[src*="head"]{
     width: 100%;
-    padding-top: 50px
+    padding-top: 80px;
+    padding-bottom: 20px
 }
 #games div img[alt^="icon"]{
     float: left;
-    padding: 30px;
+    margin-right: 5px;
     width: 30%;
     max-width: 200px
+}
+#games p:first-of-type{
+    padding: 0 10px 0 10px;
 }
 #games p{
     margin:0;
     padding: 30px 10px 0 10px;
-    font-size: 22px
+    font-size: 18px
 }
 
 #games div{
     padding: 0 15px;
-    font-size: 1.2rem
 }
 
 #games h3{
     clear: both;
-    padding: 0 15px
+    padding: 25px 15px 10px 15px;
+    font-size: 28px
 }
 
 #games p:last-of-type{
     margin:0;
-    padding: 30px 10px 0 10px;
+    padding: 30px 10px 40px 10px;
     font-size: 22px
 }
 
@@ -512,9 +523,12 @@ footer .social_media img {
     }
 #games .social_media img {
     height: 65px;
-    padding: 20px
+    margin: 20px
 }
 #games .download img{
     padding: 20px
+}
+#games div img[alt^="icon"]{
+    margin-right: 15px;
 }
 }
