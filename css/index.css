@@ -49,6 +49,19 @@ header  li a {
 }
 .navbar-light .navbar-toggler {
     outline: none;
+    border-radius: 20px;
+    padding: 5px 12px;
+    border-top: 4px solid rgba(0,0,0,.1);
+    border-right: 5px solid rgba(0,0,0,.1);
+}
+
+.navbar-light .navbar-toggler:active{
+    background-color: #8cd669;
+}
+
+
+.navbar-light .navbar-toggler-icon{
+        width: 30px;
 }
 
 #navbarNav {
@@ -230,7 +243,16 @@ header .panel li a:hover {
     background-color: rgb(238, 250, 231);
     padding: 50px 0 50px 0;
 }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 50px;
+    height: 200px;
+}
 
+.carousel-indicators li{
+    width: 20px;
+    height: 10px;
+    margin:0 5px;
+}
 #about_us {
     border-top-style: solid;
     border-top-color: #73bc52;
