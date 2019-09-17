@@ -22,8 +22,8 @@ body {
 
 header {
     background: #74bc52d3;
-    -webkit-backdrop-filter: saturate(180%) blur(15px);
-    backdrop-filter: saturate(180%) blur(15px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    backdrop-filter: saturate(180%) blur(10px);
     position: fixed;
     width: 100%;
     z-index:9999;
@@ -65,7 +65,7 @@ header  li a {
 header  li a:hover {
     color: #1b6907 !important;
 }
-   text-decoration: none;
+
 /*
 header .panel ul{
     display: flex;
@@ -111,6 +111,17 @@ header .panel li a:hover {
     }
 }
 */
+#home {
+    background-color: rgba(247, 255, 243, 0.979);
+     padding-top: 90px;
+}
+
+#home [src^=img] {
+    width: 100%;
+    display: block;
+    max-width: 400px;
+    margin: auto
+}
 #home div {
     text-align: center;
     font-size: 1rem;
@@ -154,6 +165,9 @@ header .panel li a:hover {
     #home .container{
        display:flex;
     }
+    #home div{
+        padding-right: 5px;
+    }
     #home [src^=img] {
     width: 49%;
     }
@@ -168,7 +182,7 @@ header .panel li a:hover {
 @media (min-width: 720px){
     #home div {
         text-align: center;
-
+        padding-right: 10px;
     }
     #home div p:nth-child(3){
     padding: 20px  0
@@ -196,7 +210,7 @@ header .panel li a:hover {
 .section_name {
     text-transform: uppercase;
     font-size: 1.5rem;
-    padding: 20px 20px 20px 5%;
+    padding: 35px 20px 20px 5%;
     margin: 0;
     font-weight: 600;
 }
@@ -208,7 +222,7 @@ header .panel li a:hover {
 }
 
 #our_games {
-    border-to20style: solid;
+    border-top-style: solid;
     border-top-color: var(--main-color);
     background-color: rgb(238, 250, 231);
     padding: 50px 0 50px 0;
@@ -221,7 +235,7 @@ header .panel li a:hover {
     padding: 50px 0 50px 0;
 }
 
-    border-top-style: solid;
+#about_us [src^=img] {
     width: 100%;
     display: block;
 }
@@ -435,9 +449,7 @@ footer .social_media img {
     }
 }
 
-#games {
 
-}
 
 #games  img[src*="head"]{
     width: 100%;
